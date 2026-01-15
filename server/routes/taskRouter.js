@@ -7,7 +7,7 @@ const {
   createTask,
   updateTask,
   deleteTask,
-} = require('../controllers/taskController');
+} = require('../controllers/taskController')
 
 taskRouter.get('/alltasks', authUser, getTasks);
 taskRouter.post('/create', authUser, createTask);
